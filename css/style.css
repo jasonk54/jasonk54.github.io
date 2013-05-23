@@ -274,4 +274,9 @@ h4{font-weight: 300;font-size: 14px;}
   position: absolute;
   top: 2em;
 }
-
+/*#openrecess, #chestbump {
+  height: 30%;
+  width: 30%;
+  z-index: -10;
+  opacity: .5;
+}*/
