@@ -280,3 +280,24 @@ h4{font-weight: 300;font-size: 14px;}
   z-index: -10;
   opacity: .5;
 }*/
+
+.resume {
+  width: 100%;
+  height: 90%;
+  margin-top: 1.5em;
+}
+
+#showResume {
+  background-color: rrgb(165, 163, 163);
+  padding: 1.5em;
+}
+
+#showMain {
+  color: rgb(31, 110, 226);
+  font-size: 2em;
+}
+
+#showMain:hover {
+  color: white;
+  font-style: italic;
+}

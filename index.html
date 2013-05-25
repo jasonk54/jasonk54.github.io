@@ -32,6 +32,7 @@
                 <div class="description">
                   <div class="inner">
                     Hi!  I'm Jason.  I am a Front-End Engineer.
+                    <br>Enjoy and take a look at my<a href="#" id='resume' style="color:rgb(31, 110, 226); font-style:italic"> resume</a>.
                   </div>
                 </div>
                 <div class="clear"></div>
@@ -98,6 +99,10 @@
           </div>
         </div>
       </div>
+      <div id="showResume" style="display:none">
+        <a href="#" id="showMain">Back</a>
+        <embed class="resume" src="https://www.box.com/embed/b3i691xy94s0flw.swf" wmode="opaque" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always">
+      </div>
     <script>
 
     $(window).load(function() {
@@ -111,6 +116,14 @@
       $('body').css({overflow:'auto', 'min-height':'820px'});
       $('.hide_text, #back').click(function(){
         $('#back').hide();
+      });
+      $('#resume').click(function(){
+        $('#main_bg').hide();
+        $('#showResume').show();
+      });
+      $('#showMain').click(function(){
+        $('#showResume').hide();
+        $('#main_bg').show();
       });
     });
     </script>
