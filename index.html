@@ -101,28 +101,27 @@
         <embed class="resume" src="https://www.box.com/embed/b3i691xy94s0flw.swf" wmode="opaque" type="application/x-shockwave-flash" allowFullScreen="true" allowScriptAccess="always">
       </div>
     <script>
-
-    $(window).load(function() {
-      $("#content").fadeOut();
-      $(".splashHolder").click(function(){
-        $("#content").fadeIn();
-        $("#back").show();
+      $(document).ready(function() {
+        $("#content").fadeOut();
+        $(".splashHolder").click(function(){
+          $("#content").fadeIn();
+          $("#back").show();
+        });
+        $(".icons, .icons a").slideToggle('slow');
+        $('.spinner').fadeOut();
+        $('body').css({overflow:'auto', 'min-height':'820px'});
+        $('.hide_text, #back').click(function(){
+          $('#back').hide();
+        });
+        $('#resume').click(function(){
+          $('#main_bg').hide();
+          $('#showResume').show();
+        });
+        $('#showMain').click(function(){
+          $('#showResume').hide();
+          $('#main_bg').show();
+        });
       });
-      $(".icons, .icons a").slideToggle('slow');
-      $('.spinner').fadeOut();
-      $('body').css({overflow:'auto', 'min-height':'820px'});
-      $('.hide_text, #back').click(function(){
-        $('#back').hide();
-      });
-      $('#resume').click(function(){
-        $('#main_bg').hide();
-        $('#showResume').show();
-      });
-      $('#showMain').click(function(){
-        $('#showResume').hide();
-        $('#main_bg').show();
-      });
-    });
     </script>
   </body>
 </html>
